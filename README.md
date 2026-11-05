@@ -2,8 +2,9 @@
 
 **Un assistant qui répond aux questions des équipes métier sur l'AI Act, en citant l'article et la page du texte officiel, et qui refuse de répondre quand il ne sait pas.**
 
-> 🔗 Démo en ligne : *(lien à ajouter après le déploiement)*
-> 📸 *(capture d'écran à ajouter ici)*
+### 🔗 [Essayer la démo en ligne](https://assistant-conformite-ia.streamlit.app/)
+
+![Démo de l'assistant](docs/demo.png)
 
 ---
 
