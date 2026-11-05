@@ -1,0 +1,998 @@
+[
+ {
+  "label": "sans priorité",
+  "settings": {
+   "index": "index",
+   "model": "ministral-8b-latest",
+   "min_rule_sources": 0,
+   "min_score": 0.7,
+   "top_k": 5
+  },
+  "metrics": {
+   "hit_at_k_%": 75.0,
+   "citation_correcte_%": 78.9,
+   "refus_hors_sujet_%": 100.0,
+   "faux_refus_%": 5.0,
+   "latence_moy_s": 8.89,
+   "latence_p95_s": 15.39,
+   "tokens_moy": 1749,
+   "score_min_dans_le_sujet": 0.815,
+   "score_max_hors_sujet": 0.785
+  },
+  "rows": [
+   {
+    "id": 1,
+    "question": "Quelles pratiques d'IA sont interdites par le règlement ?",
+    "in_scope": true,
+    "top_score": 0.875,
+    "retrieved": [
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 18.9,
+    "tokens": 2082,
+    "answer": "Voici les **pratiques interdites** par le **Règlement (UE) 2024/1689** (Article 5, p. 51) :\n\n- **Manipulation subliminale ou trompeuse** :\n  - Utilisation de techniques visant à altérer *substantiellement* le comportement d’une personne ou d’un groupe, en portant atteinte à sa capacité à prendre une décision éclairée.\n  - Risque de préjudice important (ex. : escroquerie, coercition).\n  - *Exemple* : Systèmes exploitant des biais psychologiques pour influencer des choix critiques [Article 5, p. 51, point a)].\n\n- **Exploitation des vulnérabilités** :\n  - Ciblage de personnes vulnérables (âge, handicap, situation économique ou sociale) pour les manipuler et leur causer un préjudice.\n  - *Exemple* : Systèmes ciblant des personnes âgées ou en précarité pour les inciter à des décisions financières risquées [Article 5, p. 51, point b)].\n\n- **Évaluation ou classification discriminatoire** :\n  - Systèmes classant ou évaluant des personnes (ex. : \"notes sociales\") en fonction de leur comportement ou de traits personnels, entraînant un traitement défavorable (ex. : accès limité à des services, opportunités).\n  - *Exemple* : Systèmes attribuant des scores sociaux basés sur des prédictions de \"comportement social\" [Article 5, p. 51, point c)].\n\n- **Reconnaissance faciale par moissonnage non ciblé** :\n  - Création de bases de données de reconnaissance faciale en collectant massivement des images (Internet, vidéosurveillance) sans consentement explicite.\n  - *Exemple* : Systèmes utilisant des données faciales extraites de vidéos publiques sans finalité légale précise [Article 5, p. 51, point e)].\n\n- **Inférence des émotions en milieu professionnel ou éducatif** :\n  - Analyse des émotions (ex. : détection du stress) dans les lieux de travail ou les écoles, sauf pour des raisons **médicales ou de sécurité**.\n  - *Exemple* : Systèmes surveillant l’humeur des employés pour ajuster leurs conditions de travail (sauf en cas de danger immédiat) [Article 5, p. 51, point f)].\n\n- **Évaluation des traits de personnalité pour des décisions critiques** :\n  - Utilisation de l’IA pour prédire des traits de personnalité (ex. : \"risque de radicalisation\") sans validation humaine indépendante, sauf pour des évaluations **criminelles fondées sur des faits vérifiables**.\n  - *Exemple* : Systèmes prédisant la \"fiabilité\" d’un candidat à un emploi sans recouper avec des critères objectifs [Article 5, p. 51, point d)].\n\n---\n**Exceptions notables** :\n- Les systèmes utilisés pour **lutter contre la criminalité** (ex. : identification biométrique à distance) peuvent être autorisés sous conditions strictes (notifications aux autorités, rapports annuels) [Article 5, p. 53, points 4 et 6].\n- Les interdictions ne s’appliquent pas si la pratique enfreint d’autres règles du droit de l’Union (ex. : RGPD) [Article 5, p. 53, point 8]."
+   },
+   {
+    "id": 2,
+    "question": "La notation sociale des personnes par une IA est-elle autorisée ?",
+    "in_scope": true,
+    "top_score": 0.856,
+    "retrieved": [
+     "Considérant 31",
+     "Considérant 44",
+     "Article 5",
+     "Considérant 31",
+     "Considérant 42"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 6.78,
+    "tokens": 1553,
+    "answer": "D'après les extraits fournis, **la notation sociale des personnes par une IA est interdite** dans le cadre du Règlement (UE) 2024/1689. Voici les éléments clés :\n\n- **Interdiction explicite** :\n  - Les systèmes d’IA visant à **évaluer ou classer des personnes physiques** en fonction de leur comportement social ou de caractéristiques personnelles (notion de \"note sociale\") sont interdits [Article 5, p. 51, point c)].\n  - Cette interdiction vise à éviter des **effets discriminatoires ou préjudiciables** dissociés du contexte initial des données [Considérant 31, p. 9].\n\n- **Exceptions** :\n  - L’interdiction ne s’applique **pas aux évaluations licites** réalisées dans un cadre précis, respectant le droit de l’Union et national [Considérant 31, p. 9].\n  - Les systèmes **strictement médicaux ou de sécurité** (ex. : usage thérapeutique) ne sont pas concernés [Considérant 44, p. 12].\n\n**À noter** : Le texte ne précise pas les contours exacts des \"évaluations licites\", mais celles-ci doivent être encadrées par la loi. Pour une analyse détaillée, consultez l’**Article 5** et les **Annexes** du Règlement."
+   },
+   {
+    "id": 3,
+    "question": "L'identification biométrique à distance en temps réel dans l'espace public est-elle autorisée pour les forces de l'ordre ?",
+    "in_scope": true,
+    "top_score": 0.877,
+    "retrieved": [
+     "Considérant 35",
+     "Considérant 39",
+     "Considérant 95",
+     "Considérant 34",
+     "Article 3"
+    ],
+    "hit": false,
+    "refused": false,
+    "cited": false,
+    "latency_s": 12.15,
+    "tokens": 1589,
+    "answer": "D’après les extraits, **l’identification biométrique à distance en temps réel dans des espaces accessibles au public est strictement encadrée pour les forces de l'ordre (activités répressives)** :\n\n- **Autorisation préalable obligatoire** :\n  - Une **autorisation expresse et spécifique** d’une autorité judiciaire ou administrative indépendante est requise, en principe **avant** l’utilisation du système [Considérant 35, p. 10].\n  - *Exception* : En cas d’**urgence avérée** (risque de ne pas pouvoir obtenir l’autorisation à temps), l’utilisation peut être autorisée, mais **limitée au strict nécessaire** [Considérant 35, p. 10].\n\n- **Conditions strictes** :\n  - Utilisation **uniquement pour confirmer l’identité d’une personne ciblée** (pas de surveillance généralisée) [Considérant 34, p. 10].\n  - Limitation **temporelle, géographique et personnelle** (ex. : durée minimale, zone précise) [Considérant 34, p. 10].\n  - **Proportionnalité** : Évaluation des risques pour les droits/frei**tés des personnes concernées et des garanties associées [Considérant 34, p. 10].\n\n- **Interdiction des contournements** :\n  - Les systèmes **a posteriori** (hors temps réel) ne doivent pas servir à contourner ces règles [Considérant 95, p. 25].\n\n*Pour une application concrète, consultez l’[Article 52](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32024R1689) (interdictions) et l’[Annexe III](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32024R1689-20240512) (exceptions) du Règlement pour les détails techniques et procéduraux.*"
+   },
+   {
+    "id": 4,
+    "question": "Comment savoir si un système d'IA est à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.836,
+    "retrieved": [
+     "Considérant 61",
+     "Considérant 155",
+     "Considérant 123",
+     "Considérant 110",
+     "Annexe III"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 7.94,
+    "tokens": 1701,
+    "answer": "D’après les extraits fournis, un système d’IA est considéré comme **à haut risque** selon les critères suivants :\n\n- **Domaine d’application** :\n  - Il doit figurer dans l’une des catégories de l’**Annexe III** (ex. : biométrie à distance, catégorisation biométrique, reconnaissance des émotions, infrastructures critiques, etc.).\n  - *Exemple* : Un système d’IA utilisé pour l’identification biométrique à distance (sans finalité de vérification simple) est explicitement classé comme haut risque [Annexe III, p. 127].\n\n- **Usage spécifique** :\n  - **Justice et démocratie** : Les systèmes destinés à aider les autorités judiciaires (recherche des faits, interprétation de la loi, application concrète) ou les organismes de règlement extrajudiciaire sont classés comme haut risque, en raison des risques de biais, d’erreurs ou d’opacité [Considérant 61, p. 18].\n  - **Risques systémiques** : Les modèles d’IA à usage général peuvent être considérés comme haut risque s’ils présentent des risques systémiques (impact sur les processus démocratiques, sécurité publique, etc.) [Considérant 110, p. 28].\n\n- **Processus de conformité** :\n  - Une **évaluation de la conformité avant mise sur le marché** est obligatoire pour les systèmes à haut risque [Considérant 123, p. 32].\n\n**Exclusions/conditions** :\n- Les systèmes de **vérification biométrique simple** (ex. : confirmation d’identité) ne sont pas inclus dans la catégorie \"haut risque\" [Annexe III, p. 127].\n- Les données opérationnelles sensibles des autorités répressives ne sont pas couvertes par la surveillance post-commercialisation [Considérant 155, p. 39].\n\nPour une analyse précise, consultez l’**Article 6, paragraphe 2** et l’**Annexe III** du Règlement."
+   },
+   {
+    "id": 5,
+    "question": "Un système d'IA qui évalue la solvabilité d'une personne pour un crédit est-il à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.852,
+    "retrieved": [
+     "Considérant 58",
+     "Annexe III",
+     "Considérant 61",
+     "Considérant 61",
+     "Considérant 157"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 7.84,
+    "tokens": 1559,
+    "answer": "Oui, selon le **Règlement (UE) 2024/1689**, un système d'IA qui évalue la solvabilité ou la note de crédit d'une personne physique est **classé comme système à haut risque**, sous réserve des exceptions suivantes :\n\n- **Base légale** :\n  - **Annexe III, point b)** : *\"Systèmes d'IA destinés à être utilisés pour évaluer la solvabilité des personnes physiques ou pour établir leur note de crédit, **à l'exception des systèmes utilisés à des fins de détection de fraudes financières**\"* [Annexe III, p. 127].\n  - **Considérant 58** : Ces systèmes peuvent entraîner des discriminations (origine raciale, sexe, handicap, etc.) ou perpétuer des biais historiques [Considérant 58, p. 16].\n\n- **Exclusion** :\n  - Les systèmes **uniquement dédiés à la détection de fraudes financières** ne sont pas concernés par cette classification à haut risque.\n\nPour vérifier si votre cas relève de l'exception, précisez l'objectif principal du système."
+   },
+   {
+    "id": 6,
+    "question": "Un logiciel d'IA qui trie les CV des candidats à un emploi est-il à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.864,
+    "retrieved": [
+     "Considérant 57",
+     "Annexe III",
+     "Annexe III",
+     "Considérant 61",
+     "Considérant 65"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 8.97,
+    "tokens": 1731,
+    "answer": "Oui, un logiciel d'IA qui trie les CV pour le recrutement est **considéré comme un système à haut risque** selon le Règlement (UE) 2024/1689.\n\n- **Base légale** :\n  - Il est explicitement cité dans l’**Annexe III, point 4(a)** [Annexe III, p. 127], qui classe comme haut risque les systèmes d’IA utilisés pour :\n    *\"le recrutement ou la sélection de personnes physiques, en particulier pour publier des offres d’emploi ciblées, analyser et filtrer les candidatures et évaluer les candidats\"*.\n  - Le **Considérant 57** [Considérant 57, p. 16] justifie cette classification en raison des *\"incidences considérables sur les perspectives de carrière et les moyens de subsistance\"* des personnes concernées.\n\n**Exception/Précision** :\nLe texte ne prévoit pas d’exception pour ce cas précis, mais la qualification dépend de l’**usage effectif** du système (ex. : si le logiciel ne prend pas de décision finale sans intervention humaine, il pourrait être couvert par des obligations spécifiques, comme la transparence ou l’auditabilité). Vérifiez aussi si le système est utilisé dans le cadre d’une **relation professionnelle contractuelle** (ex. : évaluation des performances post-embauche), ce qui élargirait encore son champ d’application [Annexe III, p. 127]."
+   },
+   {
+    "id": 7,
+    "question": "Un chatbot doit-il informer l'utilisateur qu'il interagit avec une IA ?",
+    "in_scope": true,
+    "top_score": 0.815,
+    "retrieved": [
+     "Considérant 132",
+     "Considérant 29",
+     "Considérant 27",
+     "Considérant 134",
+     "Article 50"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 7.15,
+    "tokens": 1636,
+    "answer": "Oui, selon le **Règlement (UE) 2024/1689**, un chatbot doit généralement informer l'utilisateur qu'il interagit avec un système d'IA, sous réserve des exceptions suivantes :\n\n- **Obligation de transparence** :\n  Les fournisseurs doivent concevoir les systèmes d’IA **destinés à interagir directement avec des personnes physiques** pour que ces dernières soient informées de cette interaction, sauf si cela est **évident pour une personne normalement informée et attentive**, en fonction du contexte [Article 50(1), p. 82].\n\n- **Exceptions** :\n  - **Activités répressives** : L’obligation ne s’applique pas si le système est utilisé pour la **prévention, la détection ou la poursuite d’infractions pénales**, sous réserve de garanties pour les droits des tiers [Article 50(1), p. 82].\n  - **Signalement d’infractions** : Si le chatbot est mis à disposition du public pour permettre le **signalement d’une infraction pénale**, l’exception ne s’applique pas (l’obligation de transparence reste donc applicable).\n\n*Exemple* : Un chatbot utilisé pour un service client standard doit informer l’utilisateur, tandis qu’un chatbot intégré à un système de surveillance policière pourrait être exempté."
+   },
+   {
+    "id": 8,
+    "question": "Les hypertrucages (deepfakes) générés par IA doivent-ils être signalés ?",
+    "in_scope": true,
+    "top_score": 0.828,
+    "retrieved": [
+     "Considérant 134",
+     "Considérant 134",
+     "Considérant 134",
+     "Article 50",
+     "Article 50"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 6.48,
+    "tokens": 1674,
+    "answer": "Oui, les **hypertrucages (deepfakes)** générés ou manipulés par IA doivent être signalés selon les règles suivantes :\n\n- **Obligation de transparence** :\n  Les déployeurs doivent **indiquer clairement** que le contenu (images, audio, vidéo) a été généré ou modifié par une IA, via un **étiquetage visible et reconnaissable** [Article 50, p. 82].\n\n- **Exceptions** :\n  - **Usage policier/judiciaire** : L’obligation ne s’applique pas si l’usage est autorisé par la loi pour la **prévention/détection d’infractions** ou les enquêtes [Article 50, p. 82].\n  - **Contenu artistique/créatif** :\n    La transparence est limitée à une **divulgation discrète** (sans nuire à l’œuvre), pour les œuvres manifestement **satiriques, fictives ou artistiques** [Article 50, p. 82] et [Considérant 134, p. 34].\n\n- **Cas particuliers** :\n  Pour les **textes d’intérêt public**, l’obligation ne s’applique pas si :\n  - Le contenu a été **vérifié par un humain** (examen ou contrôle éditorial).\n  - Une **responsabilité éditoriale** est assumée par une personne morale [Article 50, p. 82]."
+   },
+   {
+    "id": 9,
+    "question": "Quelle est la définition d'un système d'IA dans le règlement ?",
+    "in_scope": true,
+    "top_score": 0.876,
+    "retrieved": [
+     "Considérant 12",
+     "Article 3",
+     "Annexe III",
+     "Annexe III",
+     "Considérant 12"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 7.3,
+    "tokens": 1606,
+    "answer": "D'après le **Règlement (UE) 2024/1689**, un **système d’IA** est défini comme suit :\n\n- **Article 3, point 1, p. 46** :\n  Un **système automatisé** conçu pour fonctionner à différents niveaux d’autonomie, capable de s’adapter après son déploiement.\n  Il **infère** (analyse, apprend, raisonne ou modélise) à partir d’entrées pour produire des **sorties** (prédictions, contenu, recommandations ou décisions) influençant des environnements **physiques ou virtuels**, avec des objectifs **explicites ou implicites**.\n\n- **Exclusions** :\n  - Les systèmes **fondés uniquement sur des règles définies par des humains** (sans capacité d’inférence).\n  - Les outils traditionnels de programmation ou de traitement de données basiques.\n\n*Source principale : [Article 3, p. 46]*. Pour une analyse plus détaillée des critères techniques, voir aussi [Considérant 12, p. 4]."
+   },
+   {
+    "id": 10,
+    "question": "Qu'est-ce qu'un déployeur au sens du règlement ?",
+    "in_scope": true,
+    "top_score": 0.835,
+    "retrieved": [
+     "Considérant 13",
+     "Considérant 91",
+     "Considérant 93",
+     "Considérant 93",
+     "Considérant 72"
+    ],
+    "hit": false,
+    "refused": false,
+    "cited": false,
+    "latency_s": 9.43,
+    "tokens": 1713,
+    "answer": "D’après les extraits fournis, un **déployeur** au sens du **Règlement (UE) 2024/1689** est défini comme suit :\n\n- **Définition générale** :\n  Toute **personne physique ou morale** (y compris une autorité publique, une agence ou un organisme) qui utilise un système d’IA **sous sa propre responsabilité**, **hors cadre personnel non professionnel** [Considérant 13, p. 4].\n  *Exemple* : Une entreprise utilisant un logiciel de recrutement basé sur l’IA, ou une administration publique déployant un système de reconnaissance faciale.\n\n- **Responsabilités clés** :\n  - **Utilisation conforme** : Doit respecter la *notice d’utilisation* fournie par le fournisseur, en prenant des mesures techniques et organisationnelles adaptées [Considérant 91, p. 24].\n  - **Surveillance et traçabilité** : Supervise le fonctionnement du système et tient des registres (notamment pour les systèmes à haut risque).\n  - **Connaissance du contexte** : Identifie les risques **non anticipés** lors du développement, liés à l’usage concret (ex. : biais, impact sur des groupes vulnérables) [Considérant 93, p. 25].\n\n- **Obligations spécifiques pour les systèmes à haut risque** :\n  - **Transparence envers les utilisateurs finaux** : Informer les personnes concernées par une décision automatisée (objectif du système, droit à une explication) [Considérant 93, p. 25].\n  - **Respect des limites légales** : Pour les usages répressifs, application complémentaire de la directive (UE) 2016/680 [Considérant 93, p. 25].\n\n*Exception* : Les activités **personnelles non professionnelles** (ex. : utilisation d’une app de traduction à domicile) ne relèvent pas de cette définition."
+   },
+   {
+    "id": 11,
+    "question": "Quelles sont les obligations des déployeurs de systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.9,
+    "retrieved": [
+     "Article 26",
+     "Article 26",
+     "Article 26",
+     "Article 26",
+     "Article 26"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 8.16,
+    "tokens": 2089,
+    "answer": "Voici les principales obligations des **déployeurs de systèmes d’IA à haut risque** selon l’**Article 26** du Règlement (UE) 2024/1689 :\n\n- **Respect de la notice d’utilisation** :\n  - Utiliser le système conformément aux instructions du fournisseur (Article 26, p. 67, par. 1).\n  - Garantir que les **données d’entrée** (si contrôlées par le déployeur) sont pertinentes et représentatives (Article 26, p. 68, par. 4).\n\n- **Contrôle humain** :\n  - Désigner des personnes compétentes pour superviser l’utilisation du système (Article 26, p. 67, par. 2).\n\n- **Surveillance et signalement** :\n  - Surveiller le fonctionnement du système et signaler **sans retard** au fournisseur/distributeur ou à l’autorité de surveillance si :\n    - L’utilisation conforme à la notice pourrait entraîner un risque (Article 26, p. 68, par. 5).\n    - Un **incident grave** est détecté (Article 26, p. 68, par. 5).\n  - *Exclusion* : Les données opérationnelles sensibles des autorités répressives ne sont pas couvertes (Article 26, p. 68, par. 5).\n\n- **Transparence et information** :\n  - Informer les **travailleurs et leurs représentants** avant utilisation sur le lieu de travail (Article 26, p. 68, par. 7).\n  - Pour les autorités publiques : vérifier l’enregistrement du système dans la base de données de l’UE (Article 71) avant utilisation (Article 26, p. 68, par. 8).\n\n- **Conformité aux exigences sectorielles** :\n  - Respecter les règles de gouvernance/processus internes si le déployeur est un **établissement financier** (Article 26, p. 68, par. 10).\n\n*Source : [Article 26, p. 67-68]*. Pour des détails sur les exceptions ou les cas spécifiques (ex. : enquêtes répressives), consulter l’**Article 73** ou les considérants."
+   },
+   {
+    "id": 12,
+    "question": "Les entreprises doivent-elles former leur personnel à l'IA ?",
+    "in_scope": true,
+    "top_score": 0.815,
+    "retrieved": [
+     "Considérant 56",
+     "Considérant 4",
+     "Considérant 106",
+     "Considérant 44",
+     "Considérant 27"
+    ],
+    "hit": false,
+    "refused": false,
+    "cited": false,
+    "latency_s": 7.39,
+    "tokens": 1623,
+    "answer": "D’après les extraits fournis, voici les éléments clés concernant la formation à l’IA dans le cadre du **Règlement (UE) 2024/1689** :\n\n- **Obligation implicite de sensibilisation** :\n  Le **Considérant 27** souligne l’importance d’informer les **déployeurs** (utilisateurs finaux) des capacités et limites des systèmes d’IA, ainsi que les personnes concernées de leurs droits. Cela implique une **formation ou sensibilisation** pour garantir une utilisation responsable et transparente [Considérant 27, p. 8].\n\n- **Contexte éducatif** :\n  Le **Considérant 56** mentionne explicitement l’éducation comme un domaine clé pour développer des **compétences numériques** (y compris l’esprit critique) chez les apprenants et enseignants. Cela suggère que les acteurs du secteur éducatif doivent être formés pour utiliser l’IA de manière éthique et inclusive [Considérant 56, p. 16].\n\n---\n**À noter** :\n- Aucune **obligation légale explicite** de formation n’est énoncée dans les articles ou annexes des extraits fournis. Cependant, les principes de **transparence**, **non-discrimination** et **bien-être sociétal** (Considérant 27) rendent la formation nécessaire pour se conformer à l’esprit du Règlement.\n- Les entreprises doivent s’assurer que leur personnel (notamment ceux utilisant des systèmes d’IA à haut risque) maîtrise les **bonnes pratiques** pour éviter les biais ou violations des droits [Considérant 27, p. 8].\n\nPour une analyse complète des obligations, consultez les **articles 13 à 15** (responsabilités des déployeurs) ou l’**Annexe III** (exigences pour les systèmes à haut risque)."
+   },
+   {
+    "id": 13,
+    "question": "Quelles exigences s'appliquent aux données d'entraînement des systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.899,
+    "retrieved": [
+     "Article 10",
+     "Considérant 67",
+     "Considérant 66",
+     "Considérant 67",
+     "Considérant 68"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 13.15,
+    "tokens": 1867,
+    "answer": "Voici les exigences clés pour les **jeux de données d’entraînement** des systèmes d’IA à haut risque, selon le texte :\n\n- **Qualité des données** :\n  - Les jeux de données doivent être **pertinents**, **représentatifs**, **exempts d’erreurs** et **complets** par rapport à l’usage final du système [Considérant 67, p. 20].\n  - Ils doivent éviter toute **discrimination interdite** (notamment liée au genre, à l’origine ethnique ou raciale) [Considérant 67, p. 20].\n\n- **Gouvernance et gestion des données** :\n  - Respect des **pratiques appropriées** pour :\n    - Les **choix de conception** (ex. : pertinence des données).\n    - La **collecte** (origine, finalité initiale, surtout pour les données personnelles).\n    - Les **traitements** (annotation, étiquetage, nettoyage, etc.) [Article 10, p. 57, points 2 et 2a-c].\n\n- **Exemptions/conditions** :\n  - Les exigences ne s’appliquent **pas aux techniques respectueuses de la vie privée** (ex. : anonymisation) [Considérant 67, p. 20].\n  - La conformité peut être **délégée à des tiers certifiés** (services de vérification de gouvernance ou d’intégrité des données) [Considérant 67, p. 20].\n\n- **Accès aux données** :\n  - Facilité d’accès à des **jeux de données de haute qualité** via des infrastructures européennes (ex. : espaces communs de données comme celui de la santé) [Considérant 68, p. 20].\n\n*Source principale : [Article 10](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32024R1689) (obligations) et [Considérants 66–68](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32024R1689&from=FR) (justification).*"
+   },
+   {
+    "id": 14,
+    "question": "Un système d'IA à haut risque doit-il enregistrer des journaux d'événements ?",
+    "in_scope": true,
+    "top_score": 0.87,
+    "retrieved": [
+     "Article 12",
+     "Article 19",
+     "Article 12",
+     "Considérant 131",
+     "Considérant 71"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 9.81,
+    "tokens": 1744,
+    "answer": "Oui, **un système d’IA à haut risque doit obligatoirement permettre l’enregistrement automatique des événements (journaux)** tout au long de sa durée de vie, conformément à l’**AI Act**. Voici les points clés :\n\n- **Obligation technique** :\n  - Les systèmes d’IA à haut risque **doivent être conçus pour enregistrer automatiquement les événements pertinents** (Article 12, p. 59, paragraphe 1).\n  - Les journaux doivent couvrir :\n    - Les situations risquées ou les modifications substantielles (Article 12, p. 59, paragraphe 2, point a)).\n    - La **surveillance après commercialisation** (Article 12, p. 59, paragraphe 2, point b) et le **fonctionnement du système** (Article 12, p. 59, paragraphe 2, point c)).\n\n- **Contenu minimal obligatoire** (pour les systèmes visés à l’**Annexe III, point 1 a)**) :\n  - Date/heure de début/fin des utilisations.\n  - Base de données de référence utilisée.\n  - Données d’entrée correspondantes.\n  - Identification des vérificateurs humains (Article 12, p. 59, paragraphe 3).\n\n- **Conservation des journaux** :\n  - Les **fournisseurs** doivent conserver les journaux **sous leur contrôle** pendant **au moins 6 mois** (Article 19, p. 64, paragraphe 1).\n  - Pour les établissements financiers, les journaux sont intégrés à leur **documentation interne** (Article 19, p. 64, paragraphe 2).\n\n*Exception* : Les systèmes dans les domaines **répressifs, migration, asile ou frontières** ont des règles spécifiques (section non publique de la base de données UE, Considérant 131, p. 33)."
+   },
+   {
+    "id": 15,
+    "question": "Le contrôle humain est-il obligatoire pour les systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.895,
+    "retrieved": [
+     "Considérant 73",
+     "Article 14",
+     "Article 14",
+     "Article 14",
+     "Article 14"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 8.49,
+    "tokens": 1770,
+    "answer": "Oui, **le contrôle humain est obligatoire pour les systèmes d’IA à haut risque**, conformément aux exigences du Règlement (UE) 2024/1689.\n\n- **Article 14** impose explicitement que les systèmes d’IA classés comme **à haut risque** (liste en annexe III) doivent être conçus pour permettre un **contrôle effectif par des personnes physiques** pendant leur utilisation [Article 14, p. 60].\n- Les mesures de contrôle humain sont **proportionnées aux risques** et doivent couvrir des aspects tels que :\n  - La supervision du fonctionnement (détection d’anomalies, intervention en cas de dysfonctionnement).\n  - La capacité à **ignorer, remplacer ou inverser** les sorties du système [Article 14, p. 60].\n  - L’intervention ou l’arrêt sécurisé du système (ex. : bouton d’arrêt) [Article 14, p. 61].\n\n**Exceptions** :\n- L’obligation de **vérification distincte par deux personnes** (pour les systèmes d’identification biométrique, ex. : annexe III, point 1 a)) est **exclue** pour les usages répressifs (migration, frontières, asile) [Article 14, p. 61].\n\n*Source : Article 14 et annexe III du Règlement (UE) 2024/1689.*"
+   },
+   {
+    "id": 16,
+    "question": "Quelles amendes en cas de recours à une pratique d'IA interdite ?",
+    "in_scope": true,
+    "top_score": 0.867,
+    "retrieved": [
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 9.31,
+    "tokens": 1649,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689).\nPour cette question, adressez-vous à l'**Article 70** (dispositions générales sur les sanctions) et à l'**Annexe III** (niveaux d’amendes) du Règlement, qui précisent les sanctions financières applicables.\n\n*Exemple de référence possible* :\n- Les amendes peuvent aller jusqu’à **6 % du chiffre d’affaires mondial total annuel** (pour les violations graves) ou **3 %** (pour les violations moins graves) [Annexe III, p. 120].\n- Les montants exacts et les critères d’application dépendent des États membres (transposition en droit national).\n\nPour une réponse précise, consultez l’équipe conformité."
+   },
+   {
+    "id": 17,
+    "question": "À partir de quelle date le règlement s'applique-t-il ?",
+    "in_scope": true,
+    "top_score": 0.856,
+    "retrieved": [
+     "Considérant 179",
+     "Article 113",
+     "Considérant 179",
+     "Considérant 177",
+     "Considérant 140"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 12.82,
+    "tokens": 1893,
+    "answer": "Voici les dates clés d'application du **Règlement (UE) 2024/1689** sur l'IA, selon les extraits fournis :\n\n- **Date générale d'application** :\n  - **2 août 2026** pour la majorité des dispositions (Article 113, p. 123).\n\n- **Exceptions et dates anticipées** :\n  - **2 février 2025** :\n    - Chapitres I et II (interdictions et obligations générales, y compris les risques inacceptables) [Article 113, p. 123].\n    - Obligations pour les **fournisseurs de modèles d’IA à usage général** [Considérant 179, p. 44].\n  - **2 août 2025** :\n    - Gouvernance (organismes notifiés, structure de gouvernance) [Considérant 179, p. 44].\n    - Dispositions sur les **sanctions** (amendes administratives) [Considérant 179, p. 44].\n    - Chapitres III (section 4), V, VII, XII et Article 78 [Article 113, p. 123].\n\n- **Exception pour les systèmes à haut risque** :\n  - Les systèmes déjà mis sur le marché avant le 2 août 2026 ne sont soumis aux obligations qu’en cas de **modifications importantes** (notion équivalente à \"modification substantielle\") [Considérant 177, p. 44].\n\n*Source principale : [Article 113, p. 123] et [Considérant 179, p. 44]*."
+   },
+   {
+    "id": 18,
+    "question": "Quand un modèle d'IA à usage général présente-t-il un risque systémique ?",
+    "in_scope": true,
+    "top_score": 0.902,
+    "retrieved": [
+     "Considérant 110",
+     "Considérant 115",
+     "Considérant 111",
+     "Considérant 114",
+     "Considérant 116"
+    ],
+    "hit": false,
+    "refused": false,
+    "cited": false,
+    "latency_s": 15.77,
+    "tokens": 1531,
+    "answer": "D’après les extraits, un **modèle d’IA à usage général présente un risque systémique** s’il remplit **l’une des conditions suivantes** :\n\n- **Capacités à fort impact** :\n  Ses performances sont **égales ou supérieures** à celles des modèles les plus avancés existants, évaluées via des méthodologies techniques (essais internes ou externes indépendants) [Considérant 111, p. 29].\n\n- **Incidence significative sur le marché intérieur** :\n  Il a une **portée large** (ex. : adoption massive, influence sectorielle critique) [Considérant 111, p. 29].\n\n**Exemples de risques systémiques associés** (non exhaustifs) :\n- Perturbations de secteurs critiques (énergie, santé, transports).\n- Effets sur les processus démocratiques ou la sécurité publique.\n- Diffusion de contenus illicites ou discriminatoires [Considérant 110, p. 28].\n\n**À noter** :\n- Le risque peut émerger **après mise sur le marché** (ex. : interactions avec les déployeurs) [Considérant 111, p. 29].\n- La classification dépend de l’**état de la technique** au moment de l’entrée en vigueur du règlement (à préciser dans les annexes ou décrets d’application)."
+   },
+   {
+    "id": 19,
+    "question": "Quelles obligations pour les fournisseurs de modèles d'IA à usage général ?",
+    "in_scope": true,
+    "top_score": 0.897,
+    "retrieved": [
+     "Considérant 109",
+     "Article 53",
+     "Article 53",
+     "Article 53",
+     "Article 54"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 13.87,
+    "tokens": 1955,
+    "answer": "Voici les **obligations principales** pour les fournisseurs de modèles d’IA à usage général, selon le **Règlement (UE) 2024/1689** :\n\n- **Documentation technique** :\n  - Élaborer et mettre à jour une documentation détaillée (entraînement, tests, évaluations) conforme à l’**Annexe XI** [Article 53, p. 84].\n  - La fournir sur demande au **Bureau de l’IA** et aux autorités nationales [Article 53, p. 84].\n\n- **Transparence pour les intégrateurs** :\n  - Fournir des informations et documentation aux **fournisseurs de systèmes d’IA** pour qu’ils comprennent les capacités et limites du modèle [Article 53, p. 84].\n  - **Exclusions partielles** :\n    - Les obligations des points *a)* et *b)* ne s’appliquent **pas** aux modèles sous **licence libre et ouverte** (consultation/modification/distribution publiques, paramètres accessibles) **sauf s’ils présentent un risque systémique** [Article 53, p. 85].\n    - Les modèles **non professionnels** (développés/utilisés à des fins personnelles ou de recherche) ne sont pas soumis à ces obligations, mais sont encouragés à se conformer volontairement [Considérant 109, p. 28].\n\n- **Respect du droit d’auteur** :\n  - Mettre en place une **politique de conformité** au droit d’auteur (identification des réservations de droits via des technologies adaptées) [Article 53, p. 84].\n\n- **Transparence sur les données d’entraînement** :\n  - Publier un **résumé détaillé** du contenu utilisé pour l’entraînement, selon un modèle fourni par le Bureau de l’IA [Article 53, p. 84].\n\n- **Coopération avec les autorités** :\n  - Collaborer avec la **Commission européenne** et les autorités nationales compétentes [Article 53, p. 85].\n\n- **Simplifications pour les PME** :\n  - Les obligations doivent être **proportionnées** à la taille de l’entreprise, avec des méthodes simplifiées pour éviter un coût excessif [Considérant 109, p. 28].\n\n*Pour les modèles à **risque systémique** (non précisé ici), des obligations supplémentaires s’appliquent (voir Article 54 et suivants).*"
+   },
+   {
+    "id": 20,
+    "question": "Quand faut-il réaliser une analyse d'impact sur les droits fondamentaux ?",
+    "in_scope": true,
+    "top_score": 0.857,
+    "retrieved": [
+     "Considérant 96",
+     "Article 27",
+     "Article 27",
+     "Considérant 96",
+     "Article 27"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 9.21,
+    "tokens": 1918,
+    "answer": "D’après les extraits, **l’analyse d’impact sur les droits fondamentaux doit être réalisée dans les cas suivants** :\n\n- **Avant le premier déploiement** d’un système d’IA à haut risque, pour les catégories de déployeurs suivantes :\n  - Les **organismes publics** ou les **entités privées fournissant des services publics** (éducation, santé, logement, justice, etc.) [Article 27, p. 69, paragraphe 1].\n  - Les déployeurs de systèmes d’IA à haut risque listés dans **l’annexe III** (sauf ceux visés au point 2 de cette annexe) [Article 27, p. 69, paragraphe 1].\n\n- **Contenu obligatoire** de l’analyse (à inclure dans la notification à l’autorité de surveillance) :\n  - Description des processus d’utilisation, durée/fréquence, catégories de personnes concernées, risques identifiés, mesures de contrôle humain et dispositifs de gouvernance [Article 27, p. 69, paragraphe 1, points a) à f)].\n\n- **Exceptions/conditions** :\n  - Les déployeurs peuvent **réutiliser une analyse précédente** si les cas sont similaires [Article 27, p. 69, paragraphe 2].\n  - **Mise à jour obligatoire** si un facteur pertinent change (ex. : modification des processus ou des risques) [Article 27, p. 70, paragraphe 2].\n  - Notification des résultats à l’autorité de surveillance (sauf exemption prévue à l’**article 46, paragraphe 1**) [Article 27, p. 70, paragraphe 3].\n\n*Pour vérifier si votre système relève de l’annexe III ou des exceptions, consultez cette annexe en priorité.*"
+   },
+   {
+    "id": 21,
+    "question": "Quelle est la recette de la tarte Tatin ?",
+    "in_scope": false,
+    "top_score": 0.728,
+    "retrieved": [
+     "Considérant 112",
+     "Considérant 140",
+     "Considérant 40",
+     "Considérant 18",
+     "Considérant 165"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 2.97,
+    "tokens": 1121,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité.\n\n*(Note : Je ne peux répondre qu'aux questions liées au Règlement (UE) 2024/1689 sur l'intelligence artificielle.)*"
+   },
+   {
+    "id": 22,
+    "question": "Quel est le salaire moyen d'un data analyst à Paris ?",
+    "in_scope": false,
+    "top_score": 0.743,
+    "retrieved": [
+     "Considérant 67",
+     "Considérant 67",
+     "Considérant 57",
+     "Considérant 67",
+     "Considérant 107"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 5.04,
+    "tokens": 1393,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité ou à une source spécialisée en données salariales (comme les études sectorielles ou les plateformes dédiées). Le Règlement (UE) 2024/1689 ne traite pas des salaires ou des conditions économiques."
+   },
+   {
+    "id": 23,
+    "question": "Qui a gagné la Coupe du monde de football 2022 ?",
+    "in_scope": false,
+    "top_score": 0.737,
+    "retrieved": [
+     "Considérant 120",
+     "Considérant 141",
+     "Considérant 21",
+     "Considérant 22",
+     "Considérant 42"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 2.36,
+    "tokens": 1312,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité."
+   },
+   {
+    "id": 24,
+    "question": "Quel est le taux de TVA applicable aux logiciels en France ?",
+    "in_scope": false,
+    "top_score": 0.785,
+    "retrieved": [
+     "Considérant 103",
+     "Considérant 120",
+     "Considérant 157",
+     "Considérant 178",
+     "Considérant 129"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 7.6,
+    "tokens": 1151,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689).\nPour cette question, adressez-vous à l'équipe conformité ou à un expert en fiscalité française (comme la **Direction Générale des Finances Publiques** ou un conseiller fiscal).\n\n*Note :*\n- Le **Règlement (UE) 2024/1689** ne traite pas de la TVA.\n- En France, le taux de TVA sur les logiciels est généralement de **20%** (taux normal), sauf exceptions (ex. : logiciels éducatifs à 5,5% ou 10%).\n- Pour une réponse précise, consultez l’[Article 259 du Code Général des Impôts (CGI)](https://www.legifrance.gouv.fr/) ou un professionnel."
+   },
+   {
+    "id": 25,
+    "question": "Comment créer un tableau croisé dynamique dans Excel ?",
+    "in_scope": false,
+    "top_score": 0.758,
+    "retrieved": [
+     "Considérant 134",
+     "Considérant 165",
+     "Considérant 134",
+     "Considérant 103",
+     "Considérant 104"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 3.42,
+    "tokens": 1080,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité.\n\n*(Note : Les extraits fournis concernent uniquement le Règlement sur l'IA et ne contiennent aucune indication sur l'utilisation d'Excel ou d'outils bureautiques.)*"
+   }
+  ]
+ },
+ {
+  "label": "priorité articles",
+  "settings": {
+   "index": "index",
+   "model": "ministral-8b-latest",
+   "min_rule_sources": 3,
+   "min_score": 0.7,
+   "top_k": 5
+  },
+  "metrics": {
+   "hit_at_k_%": 95.0,
+   "citation_correcte_%": 100.0,
+   "refus_hors_sujet_%": 100.0,
+   "faux_refus_%": 5.0,
+   "latence_moy_s": 8.35,
+   "latence_p95_s": 15.95,
+   "tokens_moy": 1778,
+   "score_min_dans_le_sujet": 0.814,
+   "score_max_hors_sujet": 0.785
+  },
+  "rows": [
+   {
+    "id": 1,
+    "question": "Quelles pratiques d'IA sont interdites par le règlement ?",
+    "in_scope": true,
+    "top_score": 0.875,
+    "retrieved": [
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 16.24,
+    "tokens": 1804,
+    "answer": "Voici les **pratiques interdites** par le **Règlement (UE) 2024/1689** (Article 5) :\n\n- **Manipulation subliminale ou trompeuse** :\n  - Utilisation de techniques visant à altérer substantiellement le comportement d’une personne ou d’un groupe, en portant atteinte à sa capacité à prendre une décision éclairée (ex. : influence sur des décisions majeures comme des achats ou des votes).\n  - **Condition** : Risque de préjudice important pour la personne ou un tiers [Article 5, p. 51, point a)].\n\n- **Exploitation des vulnérabilités** :\n  - Ciblage de personnes vulnérables (âge, handicap, situation économique ou sociale) pour les manipuler et leur causer un préjudice [Article 5, p. 51, point a) et b)].\n\n- **Évaluation ou classification sociale** :\n  - Systèmes attribuant une \"note sociale\" basée sur le comportement ou des traits de personnalité, entraînant un traitement défavorable (ex. : accès aux services, emploi, logement) [Article 5, p. 51, point c)].\n\n- **Reconnaissance faciale par moissonnage non ciblé** :\n  - Création de bases de données de reconnaissance faciale en collectant massivement des images sur Internet ou via la vidéosurveillance [Article 5, p. 51, point e)].\n\n- **Inférence des émotions en milieu professionnel ou scolaire** :\n  - **Exception** : Autorisée uniquement à des fins médicales ou de sécurité [Article 5, p. 51, point f)].\n\n- **Utilisation biométrique à distance en temps réel dans l’espace public** :\n  - **Interdiction générale**, sauf pour les autorités répressives (avec notifications aux autorités nationales et à la Commission) [Article 5, p. 53, points 4 et 5].\n\n**Exclusion** :\n- Les systèmes d’IA utilisés pour **étayer une évaluation humaine** d’une implication criminelle, si celle-ci repose sur des faits objectifs et vérifiables [Article 5, p. 51, point d)]."
+   },
+   {
+    "id": 2,
+    "question": "La notation sociale des personnes par une IA est-elle autorisée ?",
+    "in_scope": true,
+    "top_score": 0.856,
+    "retrieved": [
+     "Considérant 31",
+     "Considérant 44",
+     "Article 5",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 9.22,
+    "tokens": 1729,
+    "answer": "D’après les extraits fournis, **la notation sociale des personnes par une IA est strictement interdite** dans l’UE sous le régime du Règlement (UE) 2024/1689. Voici les éléments clés :\n\n- **Interdiction explicite** :\n  - L’**Article 5, point c)** interdit la mise sur le marché, la mise en service ou l’utilisation de systèmes d’IA visant à **évaluer ou classer des personnes physiques** en fonction de leur comportement social, de caractéristiques personnelles ou de traits de personnalité, avec pour effet de générer une \"note sociale\" pouvant entraîner un **traitement préjudiciable** [Article 5, p. 51].\n  - Cette interdiction s’applique même si la notation est basée sur des données collectées dans un contexte initial (ex. : réseaux sociaux, transactions).\n\n- **Risques couverts** :\n  - Le **Considérant 31** souligne que ces systèmes peuvent **porter atteinte à la dignité, à la non-discrimination et aux valeurs d’égalité**, avec des conséquences sur des groupes entiers (ex. : exclusion sociale, discrimination systémique).\n\n- **Exceptions** :\n  - Aucune exception n’est mentionnée pour la notation sociale dans les extraits fournis. Les exceptions existantes (ex. : **Article 5, point f)** pour les systèmes médicaux ou de sécurité) ne s’appliquent **pas** à ce cas précis.\n\n**Conclusion** : La notation sociale est **illégale** sous le cadre du Règlement AI Act, sauf si elle relève d’un usage strictement médical ou de sécurité (non précisé ici). Pour une analyse complète, consultez l’**Article 5** et le **Considérant 31**."
+   },
+   {
+    "id": 3,
+    "question": "L'identification biométrique à distance en temps réel dans l'espace public est-elle autorisée pour les forces de l'ordre ?",
+    "in_scope": true,
+    "top_score": 0.877,
+    "retrieved": [
+     "Considérant 35",
+     "Considérant 39",
+     "Article 3",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 8.33,
+    "tokens": 1787,
+    "answer": "Voici les règles applicables pour l’**identification biométrique à distance en temps réel** dans l’espace public par les forces de l’ordre, selon le Règlement (UE) 2024/1689 :\n\n- **Autorisation obligatoire** :\n  - L’utilisation est **strictement encadrée** et nécessite une **autorisation expresse et spécifique** d’une autorité judiciaire ou administrative indépendante (ex. : juge ou CNIL) [Considérant 35, p. 10].\n  - L’autorisation doit être obtenue **avant l’utilisation** en principe, sauf exceptions d’urgence [Considérant 35, p. 10].\n\n- **Conditions strictes** :\n  - **Analyse d’impact sur les droits fondamentaux** obligatoire (article 27) et **enregistrement dans la base de données de l’UE** (article 49) [Article 5, p. 52].\n  - **Limitation aux cas répressifs** (ex. : recherche de personnes recherchées pour des infractions pénales graves) [Article 5, p. 52, point h)].\n\n- **Exceptions d’urgence** :\n  - En cas de **situation urgente** (risque immédiat, impossibilité pratique d’obtenir l’autorisation), l’utilisation peut commencer **sans enregistrement préalable**, mais :\n    - Doit être **limitée au strict nécessaire** [Considérant 35, p. 10].\n    - L’enregistrement dans la base de données doit être effectué **sans retard injustifié** [Article 5, p. 52].\n\n- **Délégation aux États membres** :\n  - Chaque État membre peut **définir des règles nationales** pour les demandes d’autorisation, la surveillance et les objectifs précis (ex. : types d’infractions couvertes) [Article 5, p. 53].\n\n**Exclusions** :\n- Les usages **non répressifs** (ex. : contrôle d’accès privé) sont **interdits** sauf si autorisés par le droit national, mais avec des restrictions strictes (ex. : RGPD) [Considérant 39, p. 11]."
+   },
+   {
+    "id": 4,
+    "question": "Comment savoir si un système d'IA est à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.835,
+    "retrieved": [
+     "Considérant 61",
+     "Considérant 155",
+     "Annexe III",
+     "Article 6",
+     "Article 82"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 10.6,
+    "tokens": 1846,
+    "answer": "D’après les extraits, un système d’IA est considéré comme **à haut risque** dans les cas suivants :\n\n- **Si le système est listé dans l’annexe III** (p. 127) :\n  - Exemples :\n    - Biométrie (identification à distance, catégorisation, reconnaissance des émotions).\n    - Systèmes utilisés dans des **infrastructures critiques** (sécurité, gestion des risques).\n    - Systèmes d’IA **destinés à l’administration de la justice** (aide à l’interprétation des faits, application de la loi) ou aux **procédures démocratiques** [Considérant 61, p. 18].\n\n- **Si le système est un composant de sécurité** d’un produit couvert par la législation de l’UE (ex. : équipements médicaux, véhicules autonomes) **et soumis à une évaluation par un tiers** [Article 6, paragraphe 2, p. 53].\n\n**Exceptions/conditions** :\n- Certains systèmes biométriques (ex. : vérification d’identité simple) **ne sont pas inclus** dans la liste des haut risque [Annexe III, p. 127].\n- Les systèmes utilisés par des **autorités répressives** peuvent être exclus de certaines obligations (ex. : surveillance après commercialisation) [Considérant 155, p. 39].\n\nPour une classification précise, consultez l’**annexe III** et l’**article 6** du Règlement."
+   },
+   {
+    "id": 5,
+    "question": "Un système d'IA qui évalue la solvabilité d'une personne pour un crédit est-il à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.852,
+    "retrieved": [
+     "Considérant 58",
+     "Annexe III",
+     "Considérant 61",
+     "Article 9",
+     "Article 6"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 12.41,
+    "tokens": 1725,
+    "answer": "Oui, un système d’IA qui évalue la solvabilité d’une personne physique pour un crédit est **systématiquement considéré comme un système à haut risque** selon le Règlement (UE) 2024/1689.\n\n- **Source principale** :\n  - **Annexe III, p. 127** : Les systèmes d’IA utilisés pour *\"évaluer la solvabilité des personnes physiques ou pour établir leur note de crédit\"* (sauf exceptions) sont explicitement listés comme **haut risque**, à l’exception des systèmes dédiés à la **détection de fraudes financières**.\n\n- **Justification** :\n  - Ces systèmes peuvent entraîner des discriminations (ex. biais liés à l’âge, au genre, etc.) et influencer l’accès à des services essentiels (logement, énergie, etc.) [Considérant 58, p. 16].\n\n*Exception* : Seuls les systèmes **exclusivement** conçus pour détecter des fraudes financières sont exclus de cette catégorie."
+   },
+   {
+    "id": 6,
+    "question": "Un logiciel d'IA qui trie les CV des candidats à un emploi est-il à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.864,
+    "retrieved": [
+     "Considérant 57",
+     "Annexe III",
+     "Annexe III",
+     "Considérant 61",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 7.54,
+    "tokens": 1613,
+    "answer": "Oui, un logiciel d'IA qui trie les CV pour le recrutement est **classé comme système à haut risque** selon le Règlement (UE) 2024/1689.\n\n- **Source principale** :\n  - **Annexe III, point 4.a** [p. 127] : Les systèmes d'IA utilisés pour *\"publier des offres d'emploi ciblées, analyser et filtrer les candidatures et évaluer les candidats\"* sont explicitement listés comme à haut risque.\n\n- **Justification** :\n  Ce type de système peut avoir un impact significatif sur les droits des travailleurs, les opportunités professionnelles et les moyens de subsistance, comme le souligne le **Considérant 57** [p. 16].\n\n*Exception* : Aucune exception n'est mentionnée pour ce cas précis dans les extraits fournis."
+   },
+   {
+    "id": 7,
+    "question": "Un chatbot doit-il informer l'utilisateur qu'il interagit avec une IA ?",
+    "in_scope": true,
+    "top_score": 0.814,
+    "retrieved": [
+     "Considérant 132",
+     "Considérant 29",
+     "Article 50",
+     "Annexe VIII",
+     "Article 50"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 6.68,
+    "tokens": 1677,
+    "answer": "Oui, un **chatbot** doit informer l'utilisateur qu'il interagit avec un système d'IA, **sauf dans les cas suivants** :\n\n- **Exception légale** : Si son utilisation est autorisée par la loi **uniquement pour des activités répressives** (prévention, détection ou enquête pénale), sous réserve de garanties strictes pour les droits des tiers [Article 50, p. 82].\n- **Cas évident** : Si l'interaction avec une IA est **clairement identifiable** pour une personne \"normalement informée et raisonnablement attentive\", compte tenu du contexte [Considérant 132, p. 33].\n\n**Source principale** : [Article 50, paragraphe 1, p. 82]."
+   },
+   {
+    "id": 8,
+    "question": "Les hypertrucages (deepfakes) générés par IA doivent-ils être signalés ?",
+    "in_scope": true,
+    "top_score": 0.828,
+    "retrieved": [
+     "Considérant 134",
+     "Considérant 134",
+     "Article 50",
+     "Article 50",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 9.7,
+    "tokens": 1863,
+    "answer": "Oui, les **hypertrucages** (deepfakes) générés par IA doivent être signalés selon les règles suivantes :\n\n- **Obligation de transparence pour les déployeurs** :\n  Les systèmes d’IA qui génèrent ou manipulent des **images, contenus audio ou vidéo** (hypertrucages) doivent indiquer clairement leur origine artificielle, avec une mention visible et reconnaissable [Article 50, p. 82].\n\n- **Exceptions** :\n  - **Usage autorisé par la loi** : L’obligation ne s’applique pas si l’utilisation est légale pour des **fins de prévention ou de détection d’infractions pénales** [Article 50, p. 82].\n  - **Contenu artistique/créatif** : Pour les œuvres manifestement **artistiques, satiriques, fictives ou créatives**, la transparence se limite à une **divulgation discrète** qui n’entrave pas l’œuvre (ex. : mention en bas de page ou crédits) [Article 50, p. 82].\n\n- **Cas des textes** :\n  Si le texte généré par IA est publié pour **informer le public sur des questions d’intérêt public**, une mention d’origine doit aussi être ajoutée, sauf si :\n  - Le contenu a été **vérifié par un humain** ou soumis à un **contrôle éditorial**,\n  - Une **responsabilité éditoriale** est assumée par une personne morale [Article 50, p. 82].\n\n*Source principale : [Article 50, p. 82] et [Considérant 134, p. 34]*."
+   },
+   {
+    "id": 9,
+    "question": "Quelle est la définition d'un système d'IA dans le règlement ?",
+    "in_scope": true,
+    "top_score": 0.876,
+    "retrieved": [
+     "Considérant 12",
+     "Article 3",
+     "Annexe III",
+     "Annexe III",
+     "Considérant 12"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 5.77,
+    "tokens": 1588,
+    "answer": "D'après le **Règlement (UE) 2024/1689**, la définition d’un **système d’IA** est donnée à l’**Article 3, point 1, p. 46** :\n\n- Un **système automatisé** conçu pour fonctionner à différents niveaux d’autonomie.\n- Capable de **faire preuve d’une capacité d’adaptation après son déploiement**.\n- Qui, pour des **objectifs explicites ou implicites**, déduit des **sorties** (prédictions, contenu, recommandations ou décisions) à partir des **entrées** qu’il reçoit.\n- Ces sorties peuvent **influencer des environnements physiques ou virtuels**.\n\n**Exclusions précisées dans le texte** :\n- Les systèmes **fondés uniquement sur des règles définies par des humains** (sans capacité d’inférence).\n- Les systèmes **sans capacité d’adaptation post-déploiement** ou sans automatisation.\n\n[Article 3, p. 46]"
+   },
+   {
+    "id": 10,
+    "question": "Qu'est-ce qu'un déployeur au sens du règlement ?",
+    "in_scope": true,
+    "top_score": 0.836,
+    "retrieved": [
+     "Considérant 13",
+     "Considérant 91",
+     "Article 3",
+     "Article 3",
+     "Annexe VIII"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 16.97,
+    "tokens": 1660,
+    "answer": "D’après les extraits fournis, un **déployeur** est défini comme suit :\n\n- **Définition légale** :\n  Une **personne physique ou morale** (y compris une autorité publique, une agence ou un organisme) qui **utilise un système d’IA sous sa propre autorité**, à l’exclusion des usages **personnels et non professionnels** [Article 3, p. 46].\n\n- **Exemples de contexte** :\n  - L’utilisation peut concerner des **tiers** (ex. : patients pour un système médical, usagers pour un système de recrutement).\n  - Le déployeur agit **indépendamment** du fournisseur (qui conçoit ou met sur le marché le système).\n\n- **Responsabilités clés** (mentionnées dans les considérants) :\n  - Respecter la **notice d’utilisation** du système d’IA.\n  - Mettre en place des **mesures techniques/organisationnelles** pour garantir un déploiement conforme.\n  - **Surveiller le fonctionnement** du système et tenir des **registres** (notamment pour les systèmes à haut risque) [Considérant 91, p. 24].\n\n*Exception* : Les activités **personnelles et non professionnelles** (ex. : utilisation d’une app de traduction à domicile) ne relèvent pas de cette définition."
+   },
+   {
+    "id": 11,
+    "question": "Quelles sont les obligations des déployeurs de systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.9,
+    "retrieved": [
+     "Article 26",
+     "Article 26",
+     "Article 26",
+     "Article 26",
+     "Article 26"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 6.54,
+    "tokens": 1993,
+    "answer": "Voici les principales obligations des **déployeurs de systèmes d’IA à haut risque** selon l’**Article 26** du Règlement (UE) 2024/1689 :\n\n- **Respect de la notice d’utilisation** :\n  - Utiliser le système conformément aux instructions du fournisseur (Article 26, p. 67, par. 1).\n  - Garantir un **contrôle humain** par des personnes compétentes et autorisées (par. 2).\n\n- **Gestion des données d’entrée** :\n  - Si le déployeur contrôle les données, il doit s’assurer qu’elles sont **pertinentes et représentatives** pour l’usage du système (par. 4).\n\n- **Surveillance et signalement** :\n  - Surveiller le fonctionnement du système et signaler **sans retard** au fournisseur/distributeur ou à l’autorité de surveillance si :\n    - L’utilisation conforme à la notice pourrait entraîner un risque (par. 5).\n    - Un **incident grave** est détecté (par. 5).\n  - *Exclusions* :\n    - Les données opérationnelles sensibles des autorités répressives ne sont pas couvertes (par. 5).\n    - Les établissements financiers respectent leurs obligations sectorielles (par. 10).\n\n- **Transparence et communication** :\n  - Informer les **représentants et travailleurs** avant utilisation sur le lieu de travail (par. 7).\n  - Respecter les obligations d’enregistrement pour les autorités publiques (par. 8).\n\n- **Analyse d’impact** :\n  - Utiliser les informations de l’**article 13** pour réaliser une analyse d’impact relative à la protection des données (par. 9).\n\n*Source : [Article 26, p. 67-68]*. Pour des cas spécifiques (ex. : secteurs réglementés), consulter les exceptions mentionnées."
+   },
+   {
+    "id": 12,
+    "question": "Les entreprises doivent-elles former leur personnel à l'IA ?",
+    "in_scope": true,
+    "top_score": 0.816,
+    "retrieved": [
+     "Considérant 56",
+     "Considérant 4",
+     "Article 4",
+     "Annexe III",
+     "Article 5"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 5.86,
+    "tokens": 1702,
+    "answer": "D’après les extraits fournis, voici les éléments clés concernant la formation du personnel à l’IA :\n\n- **Obligation de maîtrise de l’IA** :\n  Les **fournisseurs et déployeurs** de systèmes d’IA doivent garantir un niveau suffisant de maîtrise de l’IA pour leur personnel et les autres acteurs impliqués (ex. : enseignants, formateurs). Cela inclut des mesures adaptées à leurs compétences techniques, leur expérience et le contexte d’utilisation [Article 4, p. 51].\n  *→ La formation est donc une **exigence légale** pour assurer une utilisation conforme et sécurisée des systèmes d’IA.*\n\n- **Contexte éducatif** :\n  Le texte souligne l’importance de l’éducation aux médias et à l’esprit critique pour les apprenants et enseignants, mais **ne mentionne pas explicitement une obligation de formation spécifique** pour les entreprises en dehors des obligations générales de maîtrise de l’IA [Considérant 56, p. 16].\n\n**À retenir** :\n- La formation est **obligatoire** pour les acteurs directement responsables des systèmes d’IA (fournisseurs, déployeurs).\n- Elle doit être **adaptée** au contexte et aux publics concernés (ex. : enseignants pour les systèmes éducatifs).\n- Aucune exception n’est prévue pour les entreprises dans les extraits, sauf si elles ne sont pas classées comme fournisseurs ou déployeurs de systèmes à haut risque.\n\nPour une analyse complète, consultez l’**Article 4** et les **Annexes** (notamment III) pour identifier les systèmes concernés."
+   },
+   {
+    "id": 13,
+    "question": "Quelles exigences s'appliquent aux données d'entraînement des systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.899,
+    "retrieved": [
+     "Article 10",
+     "Considérant 67",
+     "Considérant 66",
+     "Article 10",
+     "Annexe III"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 9.06,
+    "tokens": 1802,
+    "answer": "Voici les exigences clés applicables aux **données d’entraînement** des systèmes d’IA à haut risque, selon le Règlement (UE) 2024/1689 :\n\n- **Qualité et représentativité** :\n  Les jeux de données doivent être **pertinents, suffisamment représentatifs, exempts d’erreurs et complets** par rapport à la destination du système [Article 10, p. 57, par. 3].\n  Ils doivent inclure des **propriétés statistiques appropriées**, notamment pour les personnes ou groupes concernés par l’usage du système [ibid.].\n\n- **Gouvernance et gestion des données** :\n  Les pratiques doivent couvrir :\n  - Les **choix de conception** et les **processus de collecte** (origine des données, finalité initiale si données personnelles) [Article 10, p. 57, par. 2a-b].\n  - Les **opérations de traitement** (annotation, étiquetage, nettoyage, etc.) [ibid., par. 2c].\n  - La **détection et atténuation des biais** [ibid., par. 2g].\n  - La **détection des lacunes** dans les données et leur correction [ibid., par. 2h].\n\n- **Exigences transversales** :\n  Ces règles s’appliquent aux systèmes à haut risque **visés à l’Annexe III** (ex. : recrutement, évaluation scolaire, surveillance des examens, etc.), où la qualité des données est critique pour éviter la discrimination ou les risques pour les droits fondamentaux [Considérant 66, p. 19].\n\n*Exception* : Les exigences ne s’appliquent pas aux systèmes **non classés à haut risque** (ex. : IA faible risque ou générale). Pour vérifier si votre système est concerné, consultez l’**Annexe III**."
+   },
+   {
+    "id": 14,
+    "question": "Un système d'IA à haut risque doit-il enregistrer des journaux d'événements ?",
+    "in_scope": true,
+    "top_score": 0.869,
+    "retrieved": [
+     "Article 12",
+     "Article 19",
+     "Article 12",
+     "Considérant 131",
+     "Considérant 71"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 6.48,
+    "tokens": 1715,
+    "answer": "Oui, **un système d’IA à haut risque doit obligatoirement permettre l’enregistrement automatique des événements (journaux)** tout au long de sa durée de vie, conformément à l’**Article 12, paragraphes 1 et 2** [p. 59].\n\n**Points clés :**\n- **Obligation technique** : Les systèmes doivent être conçus pour enregistrer automatiquement des événements pertinents, comme :\n  - Les situations risquant de générer un **risque non conforme** (article 79) ou une **modification substantielle** [Article 12, p. 59, points a-c].\n  - Les données nécessaires pour la **surveillance post-commercialisation** (article 72) et le **fonctionnement conforme** (article 26, paragraphe 5).\n\n- **Contenu minimal obligatoire** (pour les systèmes de l’**Annexe III, point 1 a**) :\n  - Horodatage des utilisations (début/fin).\n  - Base de données de référence utilisée.\n  - Données d’entrée traitées.\n  - Identification des vérificateurs humains (article 14, paragraphe 5) [Article 12, paragraphe 3, points a-d].\n\n**Exceptions/Précisions** :\n- Les **journaux** doivent être **conservés par le fournisseur** (Article 19, paragraphe 1) [p. 64], pendant **au moins 6 mois** (sauf dispositions nationales ou européennes contraires, comme le RGPD).\n- Pour les systèmes financiers, les journaux s’intègrent dans la **documentation interne existante** (Article 19, paragraphe 2).\n\n*Source principale : **Article 12** (obligation technique) et **Article 19** (conservation).*"
+   },
+   {
+    "id": 15,
+    "question": "Le contrôle humain est-il obligatoire pour les systèmes d'IA à haut risque ?",
+    "in_scope": true,
+    "top_score": 0.895,
+    "retrieved": [
+     "Considérant 73",
+     "Article 14",
+     "Article 14",
+     "Article 14",
+     "Article 14"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 12.9,
+    "tokens": 1731,
+    "answer": "Oui, **le contrôle humain est obligatoire pour les systèmes d’IA à haut risque**, conformément aux exigences du Règlement (UE) 2024/1689.\n\n- **Article 14, paragraphe 1** : La conception et le développement des systèmes d’IA à haut risque doivent permettre un **contrôle effectif par des personnes physiques** pendant leur utilisation.\n- **Article 14, paragraphe 3** : Les mesures de contrôle humain sont **proportionnées aux risques** et doivent être mises en place pour prévenir ou réduire les risques résiduels, même après l’application d’autres exigences.\n\n**Exceptions ou nuances** :\n- Les mesures de contrôle humain sont **adaptées au niveau d’autonomie et au contexte d’utilisation** du système (ex. : intégration technique possible ou mesures laissées au déployeur).\n- Pour les systèmes d’IA à haut risque utilisés dans des **domaines répressifs** (migration, frontières, asile), l’exigence de **vérification distincte par deux personnes** (Article 14, paragraphe 5) ne s’applique pas [Article 14, p. 61].\n\n*Source : [Article 14, p. 60-61]*."
+   },
+   {
+    "id": 16,
+    "question": "Quelles amendes en cas de recours à une pratique d'IA interdite ?",
+    "in_scope": true,
+    "top_score": 0.867,
+    "retrieved": [
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5",
+     "Article 5"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 7.06,
+    "tokens": 1642,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689).\nPour cette question, adressez-vous à l'**Article 70** (dispositions sur les sanctions) et à l'**Annexe V** (niveaux d'amendes), qui détaillent les sanctions financières applicables en cas de non-respect des règles.\n\n*Exemple de référence à consulter* :\n- [Article 70, p. 123] : \"Les États membres prévoient des sanctions efficaces, proportionnées et dissuasives pour les violations du présent règlement.\"\n- [Annexe V] : \"Les niveaux d'amendes sont fixés en fonction de la gravité de l'infraction et du chiffre d'affaires annuel mondial de l'entreprise.\""
+   },
+   {
+    "id": 17,
+    "question": "À partir de quelle date le règlement s'applique-t-il ?",
+    "in_scope": true,
+    "top_score": 0.856,
+    "retrieved": [
+     "Considérant 179",
+     "Article 113",
+     "Considérant 179",
+     "Article 2",
+     "Article 2"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 10.9,
+    "tokens": 1955,
+    "answer": "Voici les dates clés d'application du **Règlement (UE) 2024/1689** selon les extraits fournis :\n\n- **Entrée en vigueur** :\n  Le règlement entre en vigueur **20 jours après sa publication au *Journal officiel de l’Union européenne*** (date non précisée dans les extraits, mais généralement peu après le 13 juin 2024).\n\n- **Dates d'application principales** :\n  - **2 février 2025** :\n    - Chapitres I et II (interdictions et obligations générales pour les systèmes à risque inacceptable) [Article 113, p. 123].\n    - Obligations pour les **fournisseurs de modèles d’IA à usage général** [Considérant 179, p. 44].\n  - **2 août 2025** :\n    - Chapitres III (section 4), V, VII, XII et **article 78** (gouvernance, organismes notifiés, sanctions) [Article 113, p. 123].\n    - **Codes de bonne pratique** prêts pour démontrer la conformité [Considérant 179, p. 44].\n  - **2 août 2026** :\n    - **Application complète** du règlement, y compris pour les systèmes à haut risque et les obligations générales [Article 113, p. 123].\n    - **Exceptions** : L’**article 6 (paragraphe 1)** et certaines obligations ne s’appliquent qu’à partir du **2 août 2027** [Article 113, p. 123].\n\n*Remarque* : Les interdictions (risques inacceptables) et les obligations critiques (comme les modèles d’IA généraux) sont anticipées dès **2025** pour couvrir les risques immédiats [Considérant 179, p. 44]."
+   },
+   {
+    "id": 18,
+    "question": "Quand un modèle d'IA à usage général présente-t-il un risque systémique ?",
+    "in_scope": true,
+    "top_score": 0.902,
+    "retrieved": [
+     "Considérant 110",
+     "Considérant 115",
+     "Article 51",
+     "Annexe XIII",
+     "Article 52"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 14.77,
+    "tokens": 1918,
+    "answer": "Un modèle d’IA à usage général est considéré comme présentant un **risque systémique** dans les cas suivants, selon le Règlement (UE) 2024/1689 :\n\n- **Critères techniques** (Article 51, p. 83) :\n  - Il dispose de **capacités à fort impact**, évaluées via des méthodologies objectives (ex. : nombre de paramètres, taille des données, calculs d’entraînement).\n  - **Seuil automatique** : Si la quantité cumulée de calcul utilisée pour son entraînement dépasse **10²⁵ opérations en virgule flottante** (Article 51, paragraphe 2).\n  - **Équivalence à l’état de l’art** : La Commission peut le classer comme tel, même en dessous du seuil, sur décision d’office ou après une alerte scientifique (Article 51, paragraphe 1.b et Article 52, paragraphe 4).\n\n- **Critères complémentaires** (Annexe XIII, p. 144) :\n  La Commission analyse aussi :\n  - Le nombre de paramètres du modèle.\n  - La qualité/taille des données d’entraînement (ex. : tokens).\n  - Les modalités d’entrée/sortie (ex. : multimodalité, conversion texte/image).\n\n**Exemple de risque systémique** (Considérant 110, p. 28) :\n- Perturbations sectorielles critiques (ex. : santé, sécurité publique).\n- Diffusion massive de contenus illicites ou discriminatoires.\n- Impact sur les processus démocratiques ou l’économie.\n\n*Exception* : Un modèle initialement classé comme à risque systémique peut faire l’objet d’une **réévaluation** à sa demande (Article 52, paragraphe 5), si de nouveaux éléments objectifs le justifient."
+   },
+   {
+    "id": 19,
+    "question": "Quelles obligations pour les fournisseurs de modèles d'IA à usage général ?",
+    "in_scope": true,
+    "top_score": 0.897,
+    "retrieved": [
+     "Considérant 109",
+     "Article 53",
+     "Article 53",
+     "Article 53",
+     "Article 54"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 5.83,
+    "tokens": 1891,
+    "answer": "Voici les **obligations principales** pour les fournisseurs de modèles d’IA à usage général, selon le **Règlement (UE) 2024/1689** :\n\n- **Documentation technique** :\n  - Élaborer et maintenir une documentation détaillée (entraînement, tests, évaluations) conformément à l’**Annexe XI** [Article 53, p. 84].\n  - La fournir sur demande au **Bureau de l’IA** et aux autorités nationales.\n\n- **Transparence pour les intégrateurs** :\n  - Fournir des informations et documentation aux développeurs de systèmes d’IA pour qu’ils comprennent les **capacités et limites** du modèle [Article 53, p. 84].\n  - **Exclusions** :\n    - Modèles sous **licence libre et ouverte** (consultation/modification/distribution publics, paramètres accessibles) **sauf s’ils présentent un risque systémique** [Article 53, p. 85].\n    - Développeurs ou utilisateurs **non professionnels** (recherche scientifique ou usage personnel) [Considérant 109, p. 28].\n\n- **Respect du droit d’auteur** :\n  - Mettre en place une **politique de conformité** aux droits de l’Union (identification des réservations de droits via des technologies adaptées) [Article 53, p. 84].\n\n- **Traçabilité des données d’entraînement** :\n  - Publier un **résumé détaillé** des données utilisées pour l’entraînement, selon un modèle fourni par le Bureau de l’IA [Article 53, p. 84].\n\n- **Coopération avec les autorités** :\n  - Collaborer avec la Commission et les autorités nationales compétentes [Article 53, p. 85].\n\n- **Simplifications pour les PME** :\n  - Les obligations doivent être **proportionnées** à la taille de l’entreprise (méthodes simplifiées pour éviter des coûts excessifs) [Considérant 109, p. 28].\n\n*Pour les modèles à **risque systémique**, les obligations s’appliquent intégralement sans exclusion.*"
+   },
+   {
+    "id": 20,
+    "question": "Quand faut-il réaliser une analyse d'impact sur les droits fondamentaux ?",
+    "in_scope": true,
+    "top_score": 0.857,
+    "retrieved": [
+     "Considérant 96",
+     "Article 27",
+     "Article 27",
+     "Considérant 96",
+     "Article 27"
+    ],
+    "hit": true,
+    "refused": false,
+    "cited": true,
+    "latency_s": 5.24,
+    "tokens": 1789,
+    "answer": "Voici les obligations clés concernant le **moment** de réalisation de l’analyse d’impact sur les droits fondamentaux, selon le texte :\n\n- **Avant le premier déploiement** du système d’IA à haut risque, pour les cas suivants :\n  - Systèmes visés à l’**article 6, paragraphe 2** (sauf ceux exclus par l’**annexe III, point 2**).\n  - Déployeurs publics ou entités privées fournissant des **services publics** (éducation, santé, logement, justice, etc.).\n  - Déployeurs de systèmes listés à l’**annexe III, points 5), b) et c)** (ex. : banques, assurances, etc.).\n\n- **Mise à jour obligatoire** si un facteur pertinent change (ex. : modification des processus, des risques, des catégories de personnes concernées) [Article 27, p. 70].\n\n- **Exception** : Les déployeurs peuvent s’appuyer sur des analyses **précédentes** (si similaires) ou celles du fournisseur [Article 27, p. 69 et 70].\n\n*Source principale : [Article 27, p. 69-70] et [Considérant 96, p. 25]*."
+   },
+   {
+    "id": 21,
+    "question": "Quelle est la recette de la tarte Tatin ?",
+    "in_scope": false,
+    "top_score": 0.728,
+    "retrieved": [
+     "Considérant 112",
+     "Considérant 140",
+     "Annexe VIII",
+     "Annexe XI",
+     "Annexe IV"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 2.4,
+    "tokens": 1501,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité.\n\n*(Note : Les extraits fournis concernent uniquement le Règlement sur l'IA, et non des recettes culinaires.)*"
+   },
+   {
+    "id": 22,
+    "question": "Quel est le salaire moyen d'un data analyst à Paris ?",
+    "in_scope": false,
+    "top_score": 0.743,
+    "retrieved": [
+     "Considérant 67",
+     "Considérant 67",
+     "Article 10",
+     "Article 10",
+     "Annexe VIII"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 3.4,
+    "tokens": 1431,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité ou à une source spécialisée en données salariales (comme les études Pôle Emploi, Glassdoor ou les baromètres sectoriels). Les extraits fournis concernent uniquement les exigences légales sur les données et la gouvernance des systèmes d’IA."
+   },
+   {
+    "id": 23,
+    "question": "Qui a gagné la Coupe du monde de football 2022 ?",
+    "in_scope": false,
+    "top_score": 0.738,
+    "retrieved": [
+     "Considérant 120",
+     "Considérant 141",
+     "Article 2",
+     "Article 10",
+     "Article 10"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 8.15,
+    "tokens": 1513,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité."
+   },
+   {
+    "id": 24,
+    "question": "Quel est le taux de TVA applicable aux logiciels en France ?",
+    "in_scope": false,
+    "top_score": 0.785,
+    "retrieved": [
+     "Considérant 103",
+     "Considérant 120",
+     "Article 80",
+     "Annexe IV",
+     "Annexe XIII"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 4.46,
+    "tokens": 1321,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689).\nPour cette question, adressez-vous à l'équipe conformité ou à un expert en fiscalité française, car le taux de TVA applicable aux logiciels relève du droit fiscal national (en France, généralement **20%** pour les prestations de services numériques, mais des exceptions existent selon le type de logiciel ou son usage)."
+   },
+   {
+    "id": 25,
+    "question": "Comment créer un tableau croisé dynamique dans Excel ?",
+    "in_scope": false,
+    "top_score": 0.758,
+    "retrieved": [
+     "Considérant 134",
+     "Considérant 165",
+     "Annexe XIII",
+     "Annexe XIII",
+     "Annexe IV"
+    ],
+    "hit": false,
+    "refused": true,
+    "cited": false,
+    "latency_s": 2.27,
+    "tokens": 1409,
+    "answer": "Je ne trouve pas cette information dans les textes de référence (AI Act, Règlement (UE) 2024/1689). Pour cette question, adressez-vous à l'équipe conformité.\n\n*(Note : Cette réponse respecte strictement les règles imposées, car la question ne concerne pas le Règlement (UE) 2024/1689 ou l'AI Act.)*"
+   }
+  ]
+ }
+]

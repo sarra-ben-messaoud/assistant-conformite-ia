@@ -1,0 +1,8 @@
+{
+ "source": "AI_Act_2024_1689_FR.pdf",
+ "chunk_size": 1000,
+ "overlap": 150,
+ "embed_model": "mistral-embed",
+ "n_chunks": 882,
+ "built_on": "2026-11-05"
+}

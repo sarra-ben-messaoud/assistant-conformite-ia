@@ -1,0 +1,10 @@
+# Secrets : ne jamais publier la clé API
+.env
+.streamlit/secrets.toml
+
+# Environnement Python
+.venv/
+__pycache__/
+
+# Journaux d'usage (générés localement)
+logs/
